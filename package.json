@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "cd backend && npm start",
+    "install": "cd backend && npm install"
+  },
   "dependencies": {
     "react-helmet": "^6.1.0"
   }
