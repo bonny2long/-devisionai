@@ -166,7 +166,7 @@ function App() {
 
       {/* Footer */}
       <footer className="mt-12 text-center text-gray-400 dark:text-gray-500 text-sm" aria-label="Footer">
-        © {new Date().getFullYear()} DevisionAI. Built with love by Bonny Makaniankhondo.
+        © {new Date().getFullYear()} DevisionAI. Built by Bonny Makaniankhondo.
       </footer>
     </div>
   );
