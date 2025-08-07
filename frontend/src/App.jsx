@@ -9,19 +9,20 @@ function App() {
   const [copied, setCopied] = useState({ soap: false, summary: false });
   const [darkMode, setDarkMode] = useState(false);
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     document.documentElement.classList.toggle('dark', darkMode);
   }, [darkMode]);
 
   const handleSubmit = async () => {
     if (!file) return alert('Please upload a file first');
-
     const formData = new FormData();
     formData.append('file', file);
 
     try {
       setLoading(true);
-      const res = await axios.post('http://localhost:5000/api/generate', formData, {
+      const res = await axios.post(`${API_URL}/api/generate`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResults(res.data);
