@@ -1,0 +1,18 @@
+# Ignore node_modules and envs
+node_modules/
+.env
+
+# Ignore build artifacts
+dist/
+.vite/
+
+# IDE and system files
+.vscode/
+.DS_Store
+
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+backend/node_modules/
+backend/.env
